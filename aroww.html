@@ -1,0 +1,15 @@
+<script>
+      const  primeNumber = (pm) => {
+        if (pm <=1) {
+         return   `${pm} is not prime <br>`
+        }
+        var e = 0 ;
+        for (let i = 2; i < pm; i++) {
+           
+            if (pm % i === 0) return `${pm} is not prime <br>` ;
+            
+        }
+        return  `${pm} is  prime <br>`;
+    }
+document.write(primeNumber(prompt("Input To Check Its Prime or Not")))
+</script>
